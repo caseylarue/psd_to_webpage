@@ -1,0 +1,57 @@
+
+.container_12 {
+	background-color: yellow;
+}
+
+/******** header ***********/
+
+header {
+	overflow: hidden;
+}
+
+header h1 {
+	background: url(../img/logo.png) no-repeat;
+	height: 23px;
+	width: 174px;
+	margin: 10px 10px 20px 10px;
+	float: left;
+}
+
+/******** nav ***********/
+
+nav {
+	float: right;
+}
+
+nav li {
+	display: inline;
+}
+
+
+/******** banner ***********/
+
+.banner {
+	background: url(../img/city_bg.jpg) no-repeat;
+	height: 244px;
+	width: 697px;
+}
+
+.callout {
+	background: black;
+	height: 244px;
+}
+
+
+/******** main ***********/
+
+.main {
+	margin-top: 20px;
+}
+
+.grid_4 {
+	background-color: orange;
+}
+
+.grid_3 {
+	background-color: red;
+}
