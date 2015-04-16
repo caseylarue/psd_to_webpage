@@ -1,6 +1,31 @@
 
-.container_12 {
-	background-color: yellow;
+.container_24 {
+	margin-top: 10px;
+}
+
+p {
+	font-size: 13px;
+	line-height: 20px;
+	color: #353535;
+}
+
+h3 {
+	letter-spacing: -1px;
+	font-size: 26px;
+	text-transform: lowercase;
+	border-bottom: 1px solid #d1d1d1;
+	padding-bottom: 20px;
+	margin-bottom: 15px;
+	line-height: 1em;
+}
+
+a {
+	color: #7e7e7e;
+	text-decoration: none;
+}
+
+a:hover, .selected{
+	color: black;
 }
 
 /******** header ***********/
@@ -9,7 +34,7 @@ header {
 	overflow: hidden;
 }
 
-header h1 {
+header h1 a {
 	background: url(../img/logo.png) no-repeat;
 	height: 23px;
 	width: 174px;
@@ -21,12 +46,22 @@ header h1 {
 
 nav {
 	float: right;
+	margin-top: 10px;
+}
+
+nav ul {
+	width: 500px;
+	margin-left: 130px;
 }
 
 nav li {
 	display: inline;
+	margin-left: 20px;
 }
 
+nav a {
+	text-transform: lowercase;
+}
 
 /******** banner ***********/
 
@@ -34,6 +69,22 @@ nav li {
 	background: url(../img/city_bg.jpg) no-repeat;
 	height: 244px;
 	width: 697px;
+	clear: both;
+	position: relative;
+}
+
+.banner h2 {
+	color: white;
+	font-size: 28px;
+	letter-spacing: -1px;
+	width: 400px;
+	padding: 0 8px;
+	font-weight: normal;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	margin-left: 8px;
+	background: rgba(0,0,0, .5);
 }
 
 .callout {
@@ -48,10 +99,60 @@ nav li {
 	margin-top: 20px;
 }
 
-.grid_4 {
-	background-color: orange;
+.main button {
+	background-color: #242324;
+	border: none;
+	padding: 6px;
+
 }
 
-.grid_3 {
-	background-color: red;
+.main button a {
+	color: white;
 }
+
+/******** blockquote ***********/
+
+.main blockquote {
+	position: relative;
+}
+
+.main blockquote p {
+	font-style: italic;
+	font-size: 15px;
+	line-height: 25px;
+	padding: 5px 20px 20px 30px;
+	width: 200px;
+	color: #393939;
+}
+
+.main blockquote p:first-child:before, 
+.main blockquote p:last-child:after {
+	font-size: 40px;
+	font-weight: bold;
+	color: #bfbfbf;
+	font-style: italic;
+}
+
+.main blockquote p:first-child:before {
+	content: '“';
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.main blockquote p:last-child:after {
+	content: '”';
+	float: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+/******** footer ***********/
+
+footer {
+	margin: 20px;
+	border-top: 1px solid #d1d1d1;
+	padding-top: 15px;
+}
+
